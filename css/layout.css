@@ -1,0 +1,61 @@
+/* --- Layout & Grid Systems --- */
+
+/* Utility Flex */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    width: var(--container-width);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+/* Asymmetrical Grid System (Masonry-ish) */
+.grid-asymmetric {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gap);
+}
+
+/* Standard Responsive Grid */
+.grid-standard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--grid-gap);
+}
+
+/* Section Spacing */
+section {
+    padding: var(--spacing-xl) 0;
+    position: relative;
+}
+
+/* Hide scrollbar for clean aesthetic */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-bg-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-bg-accent);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-neon);
+}

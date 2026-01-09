@@ -1,0 +1,43 @@
+:root {
+    /* --- Reference Palette (Landon Norris inspired) --- */
+    --color-bg-dark: #121212;
+    --color-bg-stone: #F5F5F3; /* Slightly warm off-white */
+    --color-bg-accent: #1A1A1A; /* Slightly lighter charcoal for cards */
+    
+    --color-text-main: #FFFFFF;
+    --color-text-muted: #888888;
+    --color-text-dark: #121212;
+    
+    --color-neon: #CFFF00; /* Formula 1 Neon Green/Yellow */
+    --color-neon-dim: #A8CC00;
+    --color-blue-glow: rgba(0, 255, 255, 0.5); /* Subtle cyber accent */
+
+    /* --- Typography --- */
+    /* Impact Headers (The "Racing" feel) */
+    --font-impact: 'Oswald', sans-serif;
+    /* Editorial/Narrative (The "Human" feel) */
+    --font-editorial: 'Bodoni Moda', serif;
+    /* UI/Technical data */
+    --font-tech: 'Inter', sans-serif;
+
+    /* --- Spacing & Layout --- */
+    --spacing-xs: 0.5rem;   /* 8px */
+    --spacing-sm: 1rem;     /* 16px */
+    --spacing-md: 2rem;     /* 32px */
+    --spacing-lg: 4rem;     /* 64px */
+    --spacing-xl: 8rem;     /* 128px */
+    
+    --container-width: 90vw;
+    --grid-gap: 1rem;
+
+    /* --- Transitions --- */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-main);
+    font-family: var(--font-tech);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+}

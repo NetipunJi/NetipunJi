@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nae | Lead Developer</title>
+    <meta name="description" content="Lead Developer Portfolio. High-performance code, human-centric leadership.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;500;700&family=Inter:wght@300;400;600&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Temporary styles to verify setup */
+        .temp-intro {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        h1 {
+            font-family: var(--font-impact);
+            font-size: 6rem;
+            text-transform: uppercase;
+            line-height: 0.9;
+            margin-bottom: var(--spacing-sm);
+        }
+        p {
+            font-family: var(--font-editorial);
+            font-size: 2rem;
+            font-style: italic;
+            color: var(--color-neon);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-fixed">
+        <div class="nav-logo">NAE.</div>
+        <div class="nav-menu">
+            <a href="#narrative" class="nav-link">Narrative</a>
+            <a href="#track-record" class="nav-link">Track Record</a>
+            <a href="#builds" class="nav-link">Builds</a>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-bg-text" data-speed="0.2">LEAD<br>DEV</div>
+        <div class="container hero-content">
+            <h1 class="hero-title" data-animate>
+                <span class="block-reveal">NAE</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="accent-text">///</span> Architecting High-Performance Systems
+            </div>
+            <div class="hero-status">
+                <span class="status-indicator"></span> Available for new opportunities
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL TO START</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- The Narrative (About) - "Off Track" -->
+        <section id="narrative" class="narrative-section">
+            <div class="container">
+                <div class="grid-asymmetric">
+                    <div class="col-left">
+                        <h2 class="section-label">01 /// THE NARRATIVE</h2>
+                    </div>
+                    <div class="col-right">
+                        <p class="narrative-lead" data-animate>
+                            "Code is not just about function; it's about <span class="highlight-serif">flow</span>. 
+                            I build digital engines that drive businesses forward."
+                        </p>
+                        <p class="narrative-body">
+                            With over 8 years of experience in the cockpit of modern web development, 
+                            I specialize in merging technical precision with human-centric leadership. 
+                            I don't just write code; I set the pace for engineering teams.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- On The Grid (Tech Stack) -->
+        <section id="grid" class="tech-section">
+            <div class="container">
+                <h2 class="section-label">02 /// ON THE GRID</h2>
+                <div class="tech-grid">
+                    <!-- Tech Items -->
+                    <div class="tech-card" data-animate>
+                        <span class="tech-icon">JS</span>
+                        <h3>JavaScript</h3>
+                        <p>ES6+, TypeScript, Node.js</p>
+                    </div>
+                    <div class="tech-card" data-animate>
+                        <span class="tech-icon">RCT</span>
+                        <h3>React</h3>
+                        <p>Next.js, Redux, Context</p>
+                    </div>
+                    <div class="tech-card" data-animate>
+                        <span class="tech-icon">CSS</span>
+                        <h3>CSS Architecture</h3>
+                        <p>Tailwind, SCSS, Modules</p>
+                    </div>
+                    <div class="tech-card" data-animate>
+                        <span class="tech-icon">BE</span>
+                        <h3>Backend</h3>
+                        <p>Python, Go, PostgreSQL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Track Record (Experience) -->
+        <section id="track-record" class="track-section">
+            <div class="container">
+                <h2 class="section-label">03 /// TRACK RECORD</h2>
+                
+                <div class="timeline">
+                    <!-- Exp Item 1 -->
+                    <div class="timeline-item" data-animate>
+                        <div class="timeline-meta">
+                            <span class="year">2021 — PRESENT</span>
+                            <span class="company">TechFlow Systems</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Senior Lead Developer</h3>
+                            <p>Spearheaded the migration to micro-frontends, reducing build times by 40%. Led a squad of 8 developers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Exp Item 2 -->
+                    <div class="timeline-item" data-animate>
+                        <div class="timeline-meta">
+                            <span class="year">2018 — 2021</span>
+                            <span class="company">Alpha Formula</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Full Stack Engineer</h3>
+                            <p>Built real-time data visualization dashboards for fintech clients using WebSockets and D3.js.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Builds (Projects) -->
+        <section id="builds" class="builds-section">
+            <div class="container">
+                <h2 class="section-label">04 /// BUILDS</h2>
+                <div class="grid-asymmetric project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card large" data-animate>
+                        <div class="project-image" style="background-color: #333;"></div> <!-- Placeholder -->
+                        <div class="project-info">
+                            <h3>FinTrack Pro</h3>
+                            <p>Enterprise Finance Dashboard</p>
+                            <a href="#" class="btn-link">View Case Study -></a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card small" data-animate>
+                        <div class="project-image" style="background-color: #444;"></div>
+                        <div class="project-info">
+                            <h3>SpeedUI</h3>
+                            <p>Component Library</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="footer-section">
+            <div class="container">
+                <div class="footer-cta" data-animate>
+                    <h2>Ready to <span class="neon-text">Accelerate?</span></h2>
+                    <a href="mailto:hello@nae.dev" class="btn">Initiate Contact</a>
+                </div>
+                <div class="footer-meta">
+                    <p>&copy; 2024 Nae. Built with Speed.</p>
+                    <div class="socials">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
