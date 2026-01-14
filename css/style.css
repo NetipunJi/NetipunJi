@@ -9,9 +9,9 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: rgba(18, 18, 18, 0.8);
+    background: rgba(247, 246, 244, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .nav-logo {
@@ -51,7 +51,7 @@
 
 .nav-cta:hover {
     background: var(--color-neon);
-    color: var(--color-bg-dark);
+    color: var(--color-bg-light);
 }
 
 /* --- Hero Section --- */
@@ -63,19 +63,8 @@
     overflow: hidden;
 }
 
-.hero-bg-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: var(--font-impact);
-    font-size: 25vw;
-    line-height: 0.8;
-    color: rgba(255, 255, 255, 0.02);
-    z-index: 0;
-    text-align: center;
-    pointer-events: none;
-    white-space: nowrap;
+.hero-bg-icon {
+    display: none; /* Hidden for clean, minimalist look */
 }
 
 .hero-content {
@@ -158,7 +147,7 @@
     letter-spacing: 2px;
     color: var(--color-text-muted);
     margin-bottom: var(--spacing-md);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 1rem;
 }
 
@@ -191,27 +180,106 @@
     grid-column: 5 / -1;
 }
 
+/* Narrative Stats */
+.narrative-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    padding: var(--spacing-md) 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.stat-number {
+    font-family: var(--font-impact);
+    font-size: 2.5rem;
+    color: var(--color-neon);
+    line-height: 1;
+}
+
+.stat-label {
+    font-family: var(--font-tech);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-text-muted);
+}
+
+/* Narrative Highlights */
+.narrative-highlights {
+    margin-bottom: var(--spacing-md);
+    background: rgba(0, 0, 0, 0.02);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-left: 2px solid var(--color-neon-dim);
+}
+
+.highlights-title {
+    font-family: var(--font-tech);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-main);
+}
+
+.highlights-list {
+    list-style: none;
+    padding: 0;
+}
+
+.highlights-list li {
+    font-family: var(--font-editorial);
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.highlights-list li::before {
+    content: "///";
+    position: absolute;
+    left: 0;
+    color: var(--color-neon);
+    font-family: var(--font-tech);
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+.highlights-list li strong {
+    color: var(--color-text-main);
+    font-weight: 600;
+}
+
 /* --- On The Grid --- */
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1px;
-    background: rgba(255, 255, 255, 0.1); /* Grid lines effect */
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.08); /* Grid lines effect */
+    border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .tech-card {
-    background: var(--color-bg-dark);
+    background: var(--color-bg-white);
     padding: var(--spacing-md);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 200px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tech-card:hover {
     background: var(--color-bg-accent);
+    transform: translateY(-2px);
 }
 
 .tech-icon {
@@ -235,7 +303,7 @@
 
 /* --- Track Record (Timeline) --- */
 .timeline {
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
     margin-left: 1rem;
 }
 
@@ -248,12 +316,12 @@
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -5px; /* Half of 8px width + 1 px border */
+    left: -6px; /* Half of 10px width + 1 px border */
     top: 0;
-    width: 9px;
-    height: 9px;
-    background: var(--color-bg-dark);
-    border: 1px solid var(--color-neon);
+    width: 10px;
+    height: 10px;
+    background: var(--color-bg-light);
+    border: 2px solid var(--color-neon);
     border-radius: 50%;
 }
 
@@ -282,7 +350,7 @@
 /* --- Builds --- */
 .project-card {
     position: relative;
-    background: var(--color-bg-accent);
+    background: var(--color-bg-white);
     min-height: 400px;
 }
 
@@ -332,6 +400,128 @@
     border-bottom: 1px solid var(--color-neon);
 }
 
+/* --- Certifications Section --- */
+.cert-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.cert-card {
+    background: var(--color-bg-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: var(--spacing-md);
+    display: flex;
+    gap: var(--spacing-md);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cert-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--color-neon-dim);
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+    background: var(--color-bg-accent);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.cert-card:hover::before {
+    width: 100%;
+    opacity: 0.05;
+}
+
+.cert-provider {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 80px;
+}
+
+.provider-badge {
+    font-family: var(--font-impact);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+.cert-provider.google .provider-badge {
+    background: #4285F4;
+}
+
+.cert-provider.anthropic .provider-badge {
+    background: #D97757;
+}
+
+.cert-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cert-content h3 {
+    font-family: var(--font-editorial);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--color-text-main);
+}
+
+.cert-type {
+    font-family: var(--font-tech);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+.cert-date {
+    font-family: var(--font-tech);
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin: 0;
+}
+
+.cert-link {
+    font-family: var(--font-tech);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-neon);
+    padding-top: 0.5rem;
+    margin-top: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.cert-link:hover {
+    color: var(--color-text-main);
+    padding-left: 4px;
+}
+
 /* --- Footer --- */
 .footer-section {
     padding-bottom: var(--spacing-md);
@@ -340,7 +530,7 @@
 .footer-cta {
     text-align: center;
     padding: var(--spacing-xl) 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .footer-cta h2 {
@@ -384,6 +574,36 @@
     .nav-menu {
         display: none; /* Need a mobile menu trigger realistically, but for MVP hiding links */
     }
+    
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .cert-card {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .cert-provider {
+        min-width: auto;
+    }
+    
+    .provider-badge {
+        writing-mode: horizontal-tb;
+        transform: none;
+        text-align: center;
+    }
+
+    .narrative-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+        text-align: center;
+    }
+
+    .stat-item {
+        align-items: center;
+    }
 }
 
 /* --- Animations & Interactions --- */
@@ -418,3 +638,7 @@
     to { transform: translateY(0); opacity: 1; }
 }
 
+.neon-text {
+    color: var(--color-accent-primary);
+    font-weight: 600;
+} 

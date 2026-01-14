@@ -1,22 +1,26 @@
 :root {
-    /* --- Reference Palette (Landon Norris inspired) --- */
-    --color-bg-dark: #121212;
-    --color-bg-stone: #F5F5F3; /* Slightly warm off-white */
-    --color-bg-accent: #1A1A1A; /* Slightly lighter charcoal for cards */
+    /* --- Cloud Dancer Palette (Pantone 11-4201) - 2026 Color of the Year --- */
+    --color-bg-light: #F7F6F4; /* Cloud Dancer - soft off-white */
+    --color-bg-white: #FFFFFF; /* Pure white for cards */
+    --color-bg-accent: #E8E6E3; /* Subtle gray for depth */
     
-    --color-text-main: #FFFFFF;
-    --color-text-muted: #888888;
-    --color-text-dark: #121212;
+    --color-text-main: #1A1B1F; /* Deep charcoal for readability */
+    --color-text-muted: #5A5D66; /* Medium gray for secondary text */
+    --color-text-light: #8B8E97; /* Light gray for subtle text */
     
-    --color-neon: #CFFF00; /* Formula 1 Neon Green/Yellow */
-    --color-neon-dim: #A8CC00;
-    --color-blue-glow: rgba(0, 255, 255, 0.5); /* Subtle cyber accent */
+    --color-accent-primary: #3A5A7E; /* Professional blue accent */
+    --color-accent-secondary: #7B8FA3; /* Soft blue-gray */
+    --color-accent-subtle: rgba(58, 90, 126, 0.12); /* Subtle blue highlight */
+    
+    /* Legacy support - map old neon vars to new accent */
+    --color-neon: #3A5A7E;
+    --color-neon-dim: #7B8FA3;
 
     /* --- Typography --- */
-    /* Impact Headers (The "Racing" feel) */
-    --font-impact: 'Oswald', sans-serif;
-    /* Editorial/Narrative (The "Human" feel) */
-    --font-editorial: 'Bodoni Moda', serif;
+    /* Impact Headers */
+    --font-impact: 'Inter', sans-serif;
+    /* Editorial/Narrative */
+    --font-editorial: 'Inter', sans-serif;
     /* UI/Technical data */
     --font-tech: 'Inter', sans-serif;
 
@@ -35,7 +39,7 @@
 }
 
 body {
-    background-color: var(--color-bg-dark);
+    background-color: var(--color-bg-light);
     color: var(--color-text-main);
     font-family: var(--font-tech);
     -webkit-font-smoothing: antialiased;
