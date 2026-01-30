@@ -37,7 +37,7 @@ I'm a passionate Lead Developer currently at **Abbon Corporation**, focusing on 
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/netipun-jiwjaroen-47b990117/)
 - 📧 [Email](mailto:demon.nae@gmail.com)
-- 🌐 [Personal Website](https://netipunji.github.io)
+- 🌐 [Personal Website](https://netipunji.github.io/NetipunJi/)
 
 ---
 
