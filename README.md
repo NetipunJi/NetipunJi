@@ -1,8 +1,8 @@
 # 👋 Hi, I'm Netipun "Nae" Jiwjaroen
 
-### Lead Developer | 10+ Years Building Scalable Systems
+### Head Developer | 10+ Years Building Scalable Systems
 
-I'm a passionate Lead Developer currently at **Abbon Corporation**, focusing on building high-performance full-stack solutions and leading teams that thrive. I believe technology serves people, and I strive to build systems that scale effectively while solving real-world problems.
+I'm a passionate Head Developer currently at **Abbon Corporation**, focusing on building high-performance full-stack solutions and leading teams that thrive. I believe technology serves people, and I strive to build systems that scale effectively while solving real-world problems.
 
 ---
 
